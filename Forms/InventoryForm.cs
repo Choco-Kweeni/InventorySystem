@@ -16,7 +16,7 @@ namespace warehousesystem.Forms
 {
     public partial class InventoryForm : DevExpress.XtraEditors.XtraUserControl
     {
-        private static string connectionString = @"Data Source = LAPTOP-FC9GSM04\SQLEXPRESS;Initial Catalog = SmartWareHouseDB;Integrated Security = True;";
+        private static string connectionString = @"Data Source = KUKUSHIBO\SQLEXPRESS;Initial Catalog = SmartWareHouseDB;Integrated Security = True;";
         internal MainForm MdiParent;
 
         public InventoryForm()
