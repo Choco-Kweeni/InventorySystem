@@ -45,6 +45,7 @@
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.sidePanel4 = new DevExpress.XtraEditors.SidePanel();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
@@ -189,7 +190,7 @@
             this.splitContainerControl1.Panel2.Controls.Add(this.sidePanel5);
             this.splitContainerControl1.Panel2.Text = "Panel2";
             this.splitContainerControl1.Size = new System.Drawing.Size(1252, 705);
-            this.splitContainerControl1.SplitterPosition = 734;
+            this.splitContainerControl1.SplitterPosition = 760;
             this.splitContainerControl1.TabIndex = 1;
             // 
             // gridControl1
@@ -198,10 +199,11 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 96);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(734, 609);
+            this.gridControl1.Size = new System.Drawing.Size(760, 609);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
@@ -219,7 +221,7 @@
             // 
             // gridColumn1
             // 
-            this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("Yu Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn1.AppearanceHeader.Options.UseFont = true;
             this.gridColumn1.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn1.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
@@ -234,7 +236,7 @@
             // 
             // gridColumn2
             // 
-            this.gridColumn2.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn2.AppearanceHeader.Font = new System.Drawing.Font("Yu Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn2.AppearanceHeader.Options.UseFont = true;
             this.gridColumn2.Caption = "Product Name";
             this.gridColumn2.MinWidth = 25;
@@ -247,7 +249,7 @@
             // 
             // gridColumn3
             // 
-            this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("Yu Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn3.AppearanceHeader.Options.UseFont = true;
             this.gridColumn3.Caption = "Product Type";
             this.gridColumn3.MinWidth = 25;
@@ -260,7 +262,7 @@
             // 
             // gridColumn4
             // 
-            this.gridColumn4.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn4.AppearanceHeader.Font = new System.Drawing.Font("Yu Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn4.AppearanceHeader.Options.UseFont = true;
             this.gridColumn4.Caption = "No. Of Stocks";
             this.gridColumn4.MinWidth = 25;
@@ -273,7 +275,7 @@
             // 
             // gridColumn5
             // 
-            this.gridColumn5.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn5.AppearanceHeader.Font = new System.Drawing.Font("Yu Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn5.AppearanceHeader.Options.UseFont = true;
             this.gridColumn5.Caption = "Stocks Status";
             this.gridColumn5.MinWidth = 25;
@@ -286,7 +288,7 @@
             // 
             // gridColumn6
             // 
-            this.gridColumn6.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn6.AppearanceHeader.Font = new System.Drawing.Font("Yu Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn6.AppearanceHeader.Options.UseFont = true;
             this.gridColumn6.Caption = "Price";
             this.gridColumn6.MinWidth = 25;
@@ -300,15 +302,31 @@
             // sidePanel4
             // 
             this.sidePanel4.AllowResize = false;
+            this.sidePanel4.Appearance.BackColor = System.Drawing.Color.White;
+            this.sidePanel4.Appearance.Options.UseBackColor = true;
             this.sidePanel4.BorderThickness = 3;
+            this.sidePanel4.Controls.Add(this.simpleButton2);
             this.sidePanel4.Controls.Add(this.textEdit1);
             this.sidePanel4.Controls.Add(this.labelControl5);
             this.sidePanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel4.Location = new System.Drawing.Point(0, 0);
             this.sidePanel4.Name = "sidePanel4";
-            this.sidePanel4.Size = new System.Drawing.Size(734, 96);
+            this.sidePanel4.Size = new System.Drawing.Size(760, 96);
             this.sidePanel4.TabIndex = 0;
             this.sidePanel4.Text = "sidePanel4";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.simpleButton2.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
+            this.simpleButton2.Appearance.Options.UseBorderColor = true;
+            this.simpleButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("simpleButton2.BackgroundImage")));
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(598, 25);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(136, 50);
+            this.simpleButton2.TabIndex = 2;
             // 
             // textEdit1
             // 
@@ -335,7 +353,7 @@
             this.gridControl2.Location = new System.Drawing.Point(0, 96);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(498, 526);
+            this.gridControl2.Size = new System.Drawing.Size(472, 526);
             this.gridControl2.TabIndex = 2;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -353,7 +371,7 @@
             // 
             // gridColumn7
             // 
-            this.gridColumn7.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn7.AppearanceHeader.Font = new System.Drawing.Font("Yu Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn7.AppearanceHeader.Options.UseFont = true;
             this.gridColumn7.Caption = "Items";
             this.gridColumn7.MinWidth = 25;
@@ -364,7 +382,7 @@
             // 
             // gridColumn8
             // 
-            this.gridColumn8.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn8.AppearanceHeader.Font = new System.Drawing.Font("Yu Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn8.AppearanceHeader.Options.UseFont = true;
             this.gridColumn8.Caption = "Quantity";
             this.gridColumn8.MinWidth = 25;
@@ -375,7 +393,7 @@
             // 
             // gridColumn9
             // 
-            this.gridColumn9.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn9.AppearanceHeader.Font = new System.Drawing.Font("Yu Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn9.AppearanceHeader.Options.UseFont = true;
             this.gridColumn9.Caption = "Total";
             this.gridColumn9.MinWidth = 25;
@@ -386,7 +404,7 @@
             // 
             // gridColumn10
             // 
-            this.gridColumn10.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn10.AppearanceHeader.Font = new System.Drawing.Font("Yu Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridColumn10.AppearanceHeader.Options.UseFont = true;
             this.gridColumn10.MinWidth = 25;
             this.gridColumn10.Name = "gridColumn10";
@@ -403,7 +421,7 @@
             this.sidePanel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.sidePanel6.Location = new System.Drawing.Point(0, 622);
             this.sidePanel6.Name = "sidePanel6";
-            this.sidePanel6.Size = new System.Drawing.Size(498, 83);
+            this.sidePanel6.Size = new System.Drawing.Size(472, 83);
             this.sidePanel6.TabIndex = 1;
             this.sidePanel6.Text = "sidePanel6";
             // 
@@ -414,7 +432,7 @@
             this.sidePanel8.Controls.Add(this.labelControl6);
             this.sidePanel8.Controls.Add(this.labelControl4);
             this.sidePanel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidePanel8.Location = new System.Drawing.Point(158, 1);
+            this.sidePanel8.Location = new System.Drawing.Point(132, 1);
             this.sidePanel8.Name = "sidePanel8";
             this.sidePanel8.Size = new System.Drawing.Size(340, 82);
             this.sidePanel8.TabIndex = 0;
@@ -450,7 +468,7 @@
             this.sidePanel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel5.Location = new System.Drawing.Point(0, 0);
             this.sidePanel5.Name = "sidePanel5";
-            this.sidePanel5.Size = new System.Drawing.Size(498, 96);
+            this.sidePanel5.Size = new System.Drawing.Size(472, 96);
             this.sidePanel5.TabIndex = 0;
             this.sidePanel5.Text = "sidePanel5";
             // 
@@ -460,7 +478,7 @@
             this.sidePanel7.BorderThickness = 0;
             this.sidePanel7.Controls.Add(this.simpleButton1);
             this.sidePanel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sidePanel7.Location = new System.Drawing.Point(309, 0);
+            this.sidePanel7.Location = new System.Drawing.Point(283, 0);
             this.sidePanel7.Name = "sidePanel7";
             this.sidePanel7.Size = new System.Drawing.Size(189, 92);
             this.sidePanel7.TabIndex = 1;
@@ -482,6 +500,8 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(233)))));
+            this.panelControl1.Appearance.Options.UseBackColor = true;
             this.panelControl1.Controls.Add(this.panelControl2);
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -603,5 +623,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }

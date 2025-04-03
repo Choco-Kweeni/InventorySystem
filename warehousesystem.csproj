@@ -103,7 +103,6 @@
     <Compile Include="Model\AdminRegister.cs" />
     <Compile Include="Model\Employee.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
-    <Compile Include="obj\Release\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\CashierForm.resx">
@@ -145,7 +144,6 @@
     <None Include="obj\Debug\warehousesystem.csproj.AssemblyReference.cache" />
     <None Include="obj\Debug\warehousesystem.csproj.CoreCompileInputs.cache" />
     <None Include="obj\Debug\warehousesystem.csproj.GenerateResource.cache" />
-    <None Include="obj\Release\warehousesystem.csproj.AssemblyReference.cache" />
     <None Include="packages.config" />
     <None Include="packages\Dapper.2.1.66\.signature.p7s" />
     <None Include="packages\Dapper.2.1.66\Dapper.2.1.66.nupkg" />

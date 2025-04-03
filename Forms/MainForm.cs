@@ -28,21 +28,30 @@ namespace warehousesystem.Forms
 
         private void inventoryBTN_Click(object sender, EventArgs e)
         {
-            //mainPC.Controls.Clear();
-            //InventoryForm inventoryControl = new InventoryForm();
-            //inventoryControl.Dock = DockStyle.Fill; 
+            mainPC.Controls.Clear();
+            InventoryForm inventoryControl = new InventoryForm();
+            inventoryControl.Dock = DockStyle.Fill;
 
-            //mainPC.Controls.Add(inventoryControl);
+            mainPC.Controls.Add(inventoryControl);
 
         }
 
         private void employeeBTN_Click(object sender, EventArgs e)
         {
-            //mainPC.Controls.Clear();
-            //EmployeeForm employeeControl = new EmployeeForm();
-            //employeeControl.Dock = DockStyle.Fill;
+            mainPC.Controls.Clear();
+            EmployeeForm employeeControl = new EmployeeForm();
+            employeeControl.Dock = DockStyle.Fill;
 
-            //mainPC.Controls.Add(employeeControl);
+            mainPC.Controls.Add(employeeControl);
+        }
+
+        private void cashierBTN_Click(object sender, EventArgs e)
+        {
+            mainPC.Controls.Clear();
+            CashierForm cashier = new CashierForm();
+            cashier.Dock = DockStyle.Fill;
+
+            mainPC.Controls.Add(cashier);
         }
     }
 }

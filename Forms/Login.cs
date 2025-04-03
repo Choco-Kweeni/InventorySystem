@@ -17,7 +17,7 @@ namespace warehousesystem.Forms
 {
     public partial class Login : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        private static string connectionString = @"Data Source = LAPTOP-FC9GSM04\SQLEXPRESS;Initial Catalog = SmartWareHouseDB;Integrated Security = True;";
+        private static string connectionString = @"Data Source = KUKUSHIBO\SQLEXPRESS;Initial Catalog = SmartWareHouseDB;Integrated Security = True;";
         public Login()
         {
             InitializeComponent();
