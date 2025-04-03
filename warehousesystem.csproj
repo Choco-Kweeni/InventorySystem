@@ -147,6 +147,9 @@
     <None Include="App.config" />
     <None Include="bin\Debug\warehousesystem.exe.config" />
     <None Include="Flow Chart Diagram\Group 1.drawio.pdf" />
+    <None Include="Forms\MainForm.cs.BASE" />
+    <None Include="Forms\MainForm.cs.LOCAL" />
+    <None Include="Forms\MainForm.cs.REMOTE" />
     <None Include="Forms\Registers.cs.orig" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
